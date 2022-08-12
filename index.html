@@ -17,7 +17,7 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="pj1.html" rel="nofollow"
-                target="_blank"><img src="MATERIALI/Works.svg" width="75%" height="75%"></a>
+                target="_self"><img src="MATERIALI/Works.svg" width="75%" height="75%"></a>
             </li>
           </ul>
   
@@ -36,8 +36,15 @@
     
     
     </div>
+
+    <div class="GubioloFrontMobile">
+      <img src="MATERIALI/GubioloFrontMobile.svg" style="width: 60%">
+     </div>
+
     <div class="container1">
+     <div class="GubioloFront">
      <img src="MATERIALI/GubioloFront.svg" width="90%">
+    </div>
      <div class="gif-front">
       <img src="MATERIALI/O.svg" width="100%">
     </div>
@@ -47,10 +54,7 @@
      </div>
     
     <div class="divpres">
-      <p id="presentazione" class="presentazione">Mi chiamo Stefano Gubiolo, classe 99’, sono nato 
-        a Bassano del Grappa. Sono laureato in Design 
-        della comunicazione presso il Politecnico di Milano.
-        Sono un appassionato di musica, illustrazione e fotografia.</p>
+      <p id="presentazione" class="presentazione">Heilà! I'm Stefano Gubiolo, I'm a communication design student at Politecnico di Milano. I swing between graphic design, motion graphics, illustration and the fridge. I'll show you some cool stuff below. </p>
     </div>
 
     <div class="ticker-wrapper-h">
@@ -64,16 +68,18 @@
 
 
     <div class="workspart">
-    <div class="works">
-      <h1>Works</h1>
-    </div>
+     <div class="container reveal fade-bottom">
+      <div class="works">
+       <h1>Works</h1>
+      </div>
+     </div>
     <div class="legenda">
       <h3 class="NameTypeYear">Name/Type/Year</h3>
     </div>
 
     <div class="listaporgetti">
     <ul class="lista">
-      <li class="li-works"><a href="pj1.html" onmousemove="hover" onmouseleave="leave" id="link1">PIVÓ / BRANDING, SERVICE DESIGN AND UI DESIGN / 2022</a></li>
+      <li class="li-works"><a href="pj1.html" target="_self" onmousemove="hover" onmouseleave="leave" id="link1">PIVÓ / BRANDING, SERVICE DESIGN AND UI DESIGN / 2022</a></li>
       <li class="li-works"><a href="" onmousemove="hover2" onmouseleave="leave2" id="link2">VIATORA / SPECULATIVE DESIGN / 2021</a></li>
       <li class="li-works"><a href="" onmousemove="hover3" onmouseleave="leave3" id="link3">BRECCIA / BRANDING / 2022</a></li>
       <li class="li-works"><a href="" onmousemove="hover4" onmouseleave="leave4" id="link4">AMARO RUMORE DI UN ADDIO / MOTION GRAPHIC, 3D ANIMATION / 2022</a></li>
@@ -136,6 +142,26 @@
    }
    link5.addEventListener("mousemove", hover5);
    link5.addEventListener("mouseleave", leave5);
+
+
+   function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+
 
   </script>
   
