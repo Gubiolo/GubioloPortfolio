@@ -25,7 +25,7 @@ div.titolopj{
 div.titolopj{
 	display: flex;
 	
-	padding-top: 2vh;
+	padding-top: 5vh;
     padding-bottom: 3vh;
 	margin-right: 39%;
 	
@@ -33,16 +33,16 @@ div.titolopj{
 	
 	h1.titolopj{
 		
-		font-family: "SanFrancisco";
+		font-family: "SanFranciscoBold";
 		color: black;
-		font-size: 4vh;
+		font-size: 7vh;
 		padding-left: 27vw;
 		
 	}
 	h1.concept{
-		font-family: "SanFranciscoBold";
+		font-family: "SanFrancisco";
 		color: black;
-		font-size: 2vh;
+		font-size: 3vh;
 	}
 	p.concepttext{
 		
@@ -60,12 +60,7 @@ div.titolopj{
 		margin-right: 39%;
 	}
 
-	.freccina{
-		width: 4vw;
-		padding-right: 2vw;
-		padding-top: 1vw;
-		padding-bottom: 1vw;
-	}
+	
 
 
 /* PROVA*/
@@ -99,7 +94,7 @@ color: rgb(255, 255, 255);
 .works{
     position: flex;
 	padding-left: 1vw;
-	padding-top: 8vh;
+	padding-top: 5vh;
 	z-index: 990;
 }
 
@@ -274,16 +269,16 @@ a:hover {
 	
 	h1.titolopj{
 		
-		font-family: "SanFrancisco";
+		font-family: "SanFranciscoBold";
 		color: black;
-		font-size: 4vh;
-		padding-left: 35vw;
+		font-size: 5vh;
+		padding-left: 32vw;
 		
 	}
 	h1.concept{
-		font-family: "SanFranciscoBold";
+		font-family: "SanFrancisco";
 		color: black;
-		font-size: 2vh;
+		font-size: 3vh;
 	}
 	p.concepttext{
 		
@@ -301,12 +296,6 @@ a:hover {
 		
 	}
 
-	.freccina{
-		width: 5vw;
-		padding-right: 2vw;
-		padding-top: 1vw;
-		padding-bottom: 1vw;
-	}
 
 
   }
