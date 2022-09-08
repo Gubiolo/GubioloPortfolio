@@ -224,20 +224,29 @@ a:hover {
 
 /* OTHER WORKS*/
 
+.container.reveal.fade-bottom{
+	margin: 0%;
+	display: inline;
+	padding:0%;
+	width: auto;
+	height: auto;
+	
+}
+
 .worksgallery{
 	margin-top: 15vh;
 	width: 100%;
 	padding-left: 2vw;
-	padding-right: 2vw;	
+	padding-right: 0vw;	
 }
 
 .workspj{
 	margin-bottom: 2vh;
-	margin-right: 1vw;
+	margin-right: 2vw;
 	border-radius: 30px;
 	float: left;
 	background-color: rgb(44, 79, 255);
-	width: 47vw;
+	width: 46vw;
 	height: 50vh ;
 	background-repeat: no-repeat;
         background-size: cover;
@@ -573,8 +582,9 @@ a.CV:hover{
 
 	/* OTHER WORKS*/
 
+
 	.container.reveal.fade-bottom{
-		display: inline;
+		display: block;
 		padding:0%;
 		width: auto;
 		height: auto;
@@ -590,7 +600,7 @@ a.CV:hover{
 	
 	.workspj{
 		
-		
+		margin-top: -2%;
 		margin-right: 2vw;
 		border-radius: 15px;
 		float: left;
@@ -857,10 +867,7 @@ a.CV:hover{
 	}
   }
 
-  .container.reveal.fade-bottom {
-	margin-left: 0%;
-	padding-left: 0%;
-  }
+  
 
 @media all{
 	.container.reveal.fade-bottom{
