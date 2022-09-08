@@ -339,10 +339,10 @@ h3.aboutme{
 	position: absolute;
     z-index: 1000;
 	border-radius: 30px;
-	width: 20vw;
-	height: 50vh;
-	margin-left: 70vw;
-	margin-top: 13%;
+	width: 35vw;
+	height: 40vh;
+	margin-left: 50vw;
+	margin-top: 17%;
 	background-image: url("MATERIALI/AMBRA_Coppolo.jpg");
 	background-size:cover;
 	background-repeat: no-repeat;
@@ -509,13 +509,13 @@ div.BottoniInfo{
 	p.Italianboy{
 		position: relative;
 		font-family: SanFranciscoRegular;
-		font-size:2vh;
+		font-size:2.5vh;
 		color: rgb(255, 255, 255);
 	}
 	a.Italianboy{
 		position: relative;
 		font-family: SanFranciscoRegular;
-		font-size:2vh;
+		font-size:2.5vh;
 		color: rgb(255, 255, 255);
 		text-decoration: underline;
 		
@@ -545,7 +545,7 @@ div.BottoniInfo{
 	div.BottoniInfo{
         display: inherit;
         width: 100%;
-        padding-left:63vw;
+        padding-left:65vw;
         padding-right: 1vw;
 		padding-top: 1vh;
     }
@@ -578,9 +578,9 @@ div.BottoniInfo{
 		z-index: 1000;
 		border-radius: 20px;
 		width: 92vw;
-		height: 30vh;
+		height: 33vh;
 		margin-left: 4vw;
-		margin-top: 85%;
+		margin-top: 100%;
 		background-image: url("MATERIALI/Italianboy.jpg");
 		background-size:cover;
 		background-repeat: no-repeat;
@@ -593,11 +593,11 @@ div.BottoniInfo{
 		opacity: 0%;
 		position: absolute;
 		z-index: 1000;
-		border-radius: 30px;
+		border-radius: 20px;
 		width: 92vw;
-		height: 30vh;
+		height: 33vh;
 		margin-left: 4vw;
-		margin-top: 85%;
+		margin-top: 100%;
 		background-image: url("MATERIALI/pizza.png");
 		background-size:cover;
 		background-repeat: no-repeat;
@@ -611,11 +611,11 @@ div.BottoniInfo{
 		opacity: 0%;
 		position: absolute;
 		z-index: 1000;
-		border-radius: 30px;
+		border-radius: 20px;
 		width: 92vw;
-		height: 30vh;
+		height: 33vh;
 		margin-left: 4vw;
-		margin-top: 85%;
+		margin-top: 100%;
 		background-image: url("MATERIALI/football.png");
 		background-size:cover;
 		background-repeat: no-repeat;
@@ -629,11 +629,11 @@ div.BottoniInfo{
 		opacity: 0%;
 		position: absolute;
 		z-index: 1000;
-		border-radius: 30px;
+		border-radius: 20px;
 		width: 92vw;
-		height: 30vh;
+		height: 33vh;
 		margin-left: 4vw;
-		margin-top: 85%;
+		margin-top: 100%;
 		background-image: url("MATERIALI/film.png");
 		background-size:cover;
 		background-repeat: no-repeat;
@@ -647,11 +647,11 @@ div.BottoniInfo{
 		opacity: 0%;
 		position: absolute;
 		z-index: 1000;
-		border-radius: 30px;
+		border-radius: 20px;
 		width: 92vw;
-		height: 30vh;
+		height: 33vh;
 		margin-left: 4vw;
-		margin-top: 85%;
+		margin-top: 100%;
 		background-image: url("MATERIALI/AMBRA_Coppolo.jpg");
 		background-size:cover;
 		background-repeat: no-repeat;
@@ -665,11 +665,11 @@ div.BottoniInfo{
 		opacity: 0%;
 		position: absolute;
 		z-index: 1000;
-		border-radius: 30px;
+		border-radius: 20px;
 		width: 92vw;
-		height: 30vh;
+		height: 33vh;
 		margin-left: 4vw;
-		margin-top: 85%;
+		margin-top: 100%;
 		background-image: url("MATERIALI/visualart.png");
 		background-size:cover;
 		background-repeat: no-repeat;
@@ -683,11 +683,11 @@ div.BottoniInfo{
 		opacity: 0%;
 		position: absolute;
 		z-index: 1000;
-		border-radius: 30px;
+		border-radius: 20px;
 		width: 92vw;
-		height: 30vh;
+		height: 33vh;
 		margin-left: 4vw;
-		margin-top: 85%;
+		margin-top: 100%;
 		background-image: url("MATERIALI/analog.png");
 		background-size:cover;
 		background-repeat: no-repeat;
@@ -701,11 +701,11 @@ div.BottoniInfo{
 		opacity: 0%;
 		position: absolute;
 		z-index: 1000;
-		border-radius: 30px;
+		border-radius: 20px;
 		width: 92vw;
-		height: 30vh;
+		height: 33vh;
 		margin-left: 4vw;
-		margin-top: 85%;
+		margin-top: 100%;
 		background-image: url("MATERIALI/Cabodaroca.png");
 		background-size:cover;
 		background-repeat: no-repeat;
