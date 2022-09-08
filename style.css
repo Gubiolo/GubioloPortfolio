@@ -222,6 +222,37 @@ a:hover {
 	display: none;
 } 
 
+/* OTHER WORKS*/
+
+.worksgallery{
+	margin-top: 15vh;
+	width: 100%;
+	padding-left: 2vw;
+	padding-right: 2vw;	
+}
+
+.workspj{
+	margin-bottom: 2vh;
+	margin-right: 1vw;
+	border-radius: 30px;
+	float: left;
+	background-color: rgb(44, 79, 255);
+	width: 47vw;
+	height: 50vh ;
+	background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+}
+
+h2.infopj{
+	padding-top: 45%;
+	padding-left: 3vw;
+	padding-right: 3vw;
+	padding-top: 5vh;
+    font-family: SanFrancisco;
+	font-size: 3vh;
+	color: #fff;
+}
 
  /* ABOUT ME PAGE */
  div.Italianboy{
@@ -233,13 +264,13 @@ a:hover {
 p.Italianboy{
 	position: relative;
     font-family: SanFranciscoRegular;
-    font-size:6vh;
+    font-size:6.5vh;
     color: rgb(255, 255, 255);
 }
 a.Italianboy{
 	position: relative;
     font-family: SanFranciscoRegular;
-    font-size:6vh;
+    font-size:6.5vh;
     color: rgb(255, 255, 255);
 	text-decoration: underline;
 	
@@ -264,6 +295,7 @@ h3.aboutme{
 }
 
 .BoxItalianboy{
+	
 	opacity: 0%;
 	position: absolute;
     z-index: 1000;
@@ -281,6 +313,7 @@ h3.aboutme{
 }
 
 .BoxItalianboy2{
+	display: none;
 	opacity: 0%;
 	position: absolute;
     z-index: 1000;
@@ -288,7 +321,7 @@ h3.aboutme{
 	width: 35vw;
 	height: 50vh;
 	margin-left: 60vw;
-	margin-top: 10%;
+	margin-top: 15%;
 	background-image: url("MATERIALI/pizza.png");
 	background-size:cover;
 	background-repeat: no-repeat;
@@ -299,6 +332,7 @@ h3.aboutme{
 
 
 .BoxItalianboy3{
+	display: none;
 	opacity: 0%;
 	position: absolute;
     z-index: 1000;
@@ -317,6 +351,7 @@ h3.aboutme{
 
 
 .BoxItalianboy4{
+	display: none;
 	opacity: 0%;
 	position: absolute;
     z-index: 1000;
@@ -335,6 +370,7 @@ h3.aboutme{
 
 
 .BoxItalianboy5{
+	display: none;
 	opacity: 0%;
 	position: absolute;
     z-index: 1000;
@@ -353,6 +389,7 @@ h3.aboutme{
 
 
 .BoxItalianboy6{
+	display: none;
 	opacity: 0%;
 	position: absolute;
     z-index: 1000;
@@ -371,6 +408,7 @@ h3.aboutme{
 
 
 .BoxItalianboy7{
+	display: none;
 	opacity: 0%;
 	position: absolute;
     z-index: 1000;
@@ -389,6 +427,7 @@ h3.aboutme{
 
 
 .BoxItalianboy8{
+	display: none;
 	opacity: 0%;
 	position: absolute;
     z-index: 1000;
@@ -407,6 +446,34 @@ h3.aboutme{
 
 div.BottoniInfo{
 	display: none;
+}
+
+.Download{
+	margin-top: 8vh;
+}
+
+div.CV{
+	margin-left: 85%;
+	margin-top: 1vh;
+}
+
+a.CV{
+	font-family: SanFranciscoRegular;
+}
+
+a.CV:hover{
+	text-decoration: underline;
+	font-family: SanFrancisco;
+	color: #fff;
+	opacity: 100%;
+}
+
+.dot2{
+	   height: 1.6vh;
+        width: 1.6vh;
+        background-color: rgb(255, 255, 255);
+        border-radius: 50%;
+        display: inline-block;	
 }
 
 /*MOBILE*/
@@ -457,7 +524,7 @@ div.BottoniInfo{
 	}
 
 	div.workspart{
-		height: 100vh;
+		height: 70vh;
 	}
 
     div.legenda{
@@ -504,7 +571,50 @@ div.BottoniInfo{
 		font-size: 3vh;
 	}
 
+	/* OTHER WORKS*/
+
+	.container.reveal.fade-bottom{
+		display: inline;
+		padding:0%;
+		width: auto;
+		height: auto;
+		
+	}
+
+	.worksgallery{
+		margin-top: 6vh;
+		width: 100%;
+		padding-left: 4vw;
+		padding-right: 2vw;	
+	}
+	
+	.workspj{
+		
+		
+		margin-right: 2vw;
+		border-radius: 15px;
+		float: left;
+		background-color: rgb(44, 79, 255);
+		width: 45vw;
+		height: 20vh ;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	
+	h2.infopj{
+		padding-top: 5%;
+		font-family: SanFrancisco;
+		font-size: 1.3vh;
+		color: #fff;
+		
+	}
+
 	/*ABOUT ME MOBILE*/
+
+	.Download{
+		display: none;
+	}
 
 	p.Italianboy{
 		position: relative;
@@ -752,5 +862,13 @@ div.BottoniInfo{
 	padding-left: 0%;
   }
 
-
+@media all{
+	.container.reveal.fade-bottom{
+		display: inline;
+		padding:0%;
+		width: auto;
+		height: auto;
+		
+	}
+}
  
