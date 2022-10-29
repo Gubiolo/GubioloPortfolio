@@ -192,6 +192,10 @@ h3.NameTypeYear {
   border-width: 2px;
 }
 
+a.mainpj {
+  font-family: SanFranciscoRegular;
+}
+
 a:hover {
   color: rgb(255, 255, 255);
   opacity: 75%;
@@ -488,6 +492,7 @@ a.CV:hover {
   }
 
   div.workspart {
+    display: none;
     height: 70vh;
   }
 
