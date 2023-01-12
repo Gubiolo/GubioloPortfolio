@@ -8,6 +8,10 @@
   src: url("MATERIALI/SF-Pro-Display-Regular.otf");
 }
 
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
 /* TICKER */
 
 .ticker-wrapper-h {

@@ -8,6 +8,10 @@
   src: url("MATERIALI/SF-Pro-Display-Regular.otf");
 }
 
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
 .GubioloFrontMobile {
   display: none;
 }
@@ -126,6 +130,7 @@ a {
 .news-ticker-h li a {
   color: #212529;
   font-weight: bold;
+  font-size: 2vh;
 }
 
 @keyframes tic-h {
@@ -140,19 +145,19 @@ a {
   }
 }
 
-.copertine {
-  position: absolute;
-  padding-left: 2vw;
-  padding-right: 2vw;
+div.copertine {
+  position: relative;
+
   z-index: 50;
-  top: 105vh;
+  top: -103vh;
+  width: 100vw;
 }
 
 .copertineimg {
   position: absolute;
   z-index: 0;
-  width: 95vw;
-
+  width: 100vw;
+  padding: 1%;
   border-radius: 30px;
   opacity: 0%;
 }
@@ -180,7 +185,7 @@ h3.NameTypeYear {
 }
 .legenda {
   padding-left: 8vw;
-  padding-top: 10vh;
+  padding-top: 7vh;
   padding-bottom: 1vh;
 }
 
@@ -218,17 +223,17 @@ a:hover {
 .worksgallery {
   margin-top: 4vh;
   width: 100%;
-  padding-left: 2vw;
+  padding-left: 7vw;
   padding-right: 0vw;
 }
 
 .workspj {
   margin-bottom: 2vh;
-  margin-right: 2vw;
+  margin-right: 1vw;
   border-radius: 15px;
   float: left;
   background-color: rgb(44, 79, 255);
-  width: 46vw;
+  width: 42vw;
   height: 46vh;
   background-repeat: no-repeat;
   background-size: cover;

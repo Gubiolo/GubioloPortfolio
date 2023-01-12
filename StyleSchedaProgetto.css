@@ -8,6 +8,10 @@
   src: url("MATERIALI/SF-Pro-Display-Regular.otf");
 }
 
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
 /* TICKER */
 
 .ticker-wrapper-h {
@@ -153,6 +157,28 @@ div.concepttext {
 p.concepttext {
   font-family: SanFranciscoRegular;
   font-size: 2vh;
+}
+p.concepttextbox {
+  color: #ffffff;
+  font-family: SanFranciscoRegular;
+  font-size: 2vh;
+  margin-left: 0.5vw;
+  margin-bottom: 0;
+}
+
+div.concepttextbox {
+  background-color: black;
+  position: relative;
+  border: solid;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 30px;
+  margin-bottom: 2.5vh;
+  margin-top: 2vh;
+  width: auto;
+  height: auto;
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
 }
 
 div.BottoniInfo {
@@ -328,5 +354,24 @@ div.BoxSlideVideo {
     font-size: 2vh;
     color: rgb(0, 0, 0);
     text-decoration: underline;
+  }
+
+  div.concepttextbox {
+    background-color: transparent;
+    border: none;
+    margin-bottom: 2.5vh;
+    margin-top: 2vh;
+    position: relative;
+    width: 100%;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  p.concepttextbox {
+    color: black;
+    font-family: SanFranciscoRegular;
+    font-size: 2vh;
   }
 }
