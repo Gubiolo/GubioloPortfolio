@@ -230,11 +230,11 @@ a:hover {
 .workspj {
   margin-bottom: 2vh;
   margin-right: 1vw;
-  border-radius: 15px;
+  border-radius: 10px;
   float: left;
   background-color: rgb(44, 79, 255);
   width: 28vw;
-  height: 35vh;
+  height: 30vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -242,11 +242,11 @@ a:hover {
 
 h2.infopj {
   padding-top: 45%;
-  padding-left: 3vw;
-  padding-right: 3vw;
-  padding-top: 5vh;
+  padding-left: 1.5vw;
+  padding-right: 2.5vw;
+  padding-top: 3.5vh;
   font-family: SanFranciscoRegular;
-  font-size: 3vh;
+  font-size: 2.5vh;
   color: #fff;
 }
 
