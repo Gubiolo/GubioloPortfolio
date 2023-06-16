@@ -85,8 +85,6 @@ div.Info {
   position: fixed;
   width: 40vw;
   background-color: rgb(255, 255, 255);
-  border-right: #151515;
-  border-width: 2px;
   height: 97vh;
 }
 
