@@ -110,7 +110,7 @@ body::-webkit-scrollbar {
   gap: 10px;
   align-self: stretch;
   border-radius: 15px;
-  background: url(../MATERIALI/neonhome.jpg), lightgray 50%;
+  background: url(./MATERIALI/neonhome.jpg), lightgray 50%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
