@@ -513,10 +513,10 @@ a {
   .nav {
     display: flex;
     position: fixed;
-    padding: 20px 0px 0px 0px;
-    padding-bottom: 15px;
-    justify-content: center;
-    align-items: center;
+    padding: 15px 0px 0px 0px;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
     align-self: center;
     width: 100%;
     margin: 0 auto;
@@ -526,16 +526,16 @@ a {
   }
 
   .logohome {
-    padding-left: 35px;
+    padding-left: 20px;
     display: flex;
     width: 102px;
     height: 30px;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
 
   .menu {
-    padding-right: 30px;
+    padding-right: 10px;
     display: flex;
     align-items: flex-start;
     gap: 8px;
@@ -548,7 +548,11 @@ a {
     align-items: center;
     gap: 10px;
     border-radius: 15px;
-    border: 0.5px solid #fff;
+    border: 0.3px solid #fff;
+  }
+
+  #buttonabout {
+    display: block;
   }
 
   .buttext {
@@ -561,20 +565,32 @@ a {
     line-height: normal;
   }
 
+  /* sezione */
+
+  .sezione {
+    height: 82vh;
+    width: auto;
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 3vh;
+    scroll-snap-stop: always;
+    scroll-snap-align: center;
+    padding: 65px 12px 30px 12px;
+  }
+
   /* SLIDE1 */
 
   .slide1 {
     display: flex;
-    height: 80vh;
-    padding: 40px 5vw 15px 5vw;
+    height: 75vh;
+    padding: 40px 3vw 0px 5vw;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
     gap: 10px;
     align-self: stretch;
     border-radius: 15px;
-    background: url(.//MATERIALI/neonhome.jpg), lightgray 50%;
-    background-repeat: no-repeat;
+    background: url(.//MATERIALI/neonhomemobile.jpg), lightgray 50%;
+    background-repeat: space;
     background-size: cover;
     background-position: center;
   }
@@ -604,6 +620,8 @@ a {
     display: none;
   }
 
+  /* SLIDE TERZA */
+
   .sezionetre {
     width: auto;
     background-color: rgb(0, 0, 0);
@@ -632,7 +650,7 @@ a {
     color: #fff;
     opacity: 100%;
     font-family: "SF Pro Display";
-    font-size: 29px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 70%;
@@ -645,19 +663,20 @@ a {
   .sectiontitle {
     color: #fff;
     font-family: "SF Pro Display";
-    font-size: 29px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 70%;
     letter-spacing: -1px;
     mix-blend-mode: exclusion;
     opacity: 100;
-    padding-left: 15px;
+    padding-left: 0px;
   }
 
-  #t2 {
+  /* TITOLO ALL WORKS NON CENTRALE
+   #t2 {
     align-self: normal;
-  }
+  } */
 
   .pjgridA {
     display: flex;
