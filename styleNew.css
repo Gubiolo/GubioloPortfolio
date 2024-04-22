@@ -698,7 +698,7 @@ a {
     justify-content: center;
     align-items: flex-start;
     align-content: flex-start;
-    gap: 10px;
+    gap: 5px;
     align-self: stretch;
     flex-wrap: wrap;
     animation: none;

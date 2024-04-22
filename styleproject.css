@@ -1,0 +1,367 @@
+body {
+  background: #eaeae7;
+  display: flex;
+  /* min-width: 700px; */
+  flex-direction: column;
+  align-items: flex-start;
+  overflow-y: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+.main::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.media::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.media {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/*NAVABAR*/
+
+a {
+  all: unset;
+  cursor: pointer;
+}
+
+#t2 {
+  scroll-behavior: smooth;
+}
+
+.nav {
+  display: flex;
+  position: sticky;
+  padding: 20px 0px 0px 0px;
+  padding-bottom: 15px;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: center;
+  width: 100%;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.logohome {
+  padding-left: 30px;
+  display: flex;
+  width: 102px;
+  height: 30px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.menu {
+  padding-right: 25px;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.button {
+  display: flex;
+  padding: 4px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 15px;
+  border: 0.5px solid #000000;
+}
+
+.buttonnext {
+  display: flex;
+  padding: 4px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 0px 15px 15px 0px;
+  border: 0.5px solid #000000;
+}
+
+.buttonback {
+  display: flex;
+  padding: 4px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 15px 0px 0px 15px;
+  border: 0.5px solid #000000;
+}
+
+.buttext {
+  color: #000000;
+  text-align: center;
+  font-family: "SF Pro Display";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.button:hover {
+  opacity: 60%;
+}
+.logohome:hover {
+  opacity: 60%;
+}
+
+/* TICKER */
+
+.crediti {
+  color: #000000;
+  font-family: "SF Pro Display";
+  font-size: 10px;
+  font-style: normal;
+  letter-spacing: -0.56px;
+  font-weight: 400;
+}
+
+.ticker-wrapper-h {
+  display: flex;
+  position: fixed;
+  overflow: hidden;
+  background-color: #000000;
+  width: 100%;
+  bottom: 0%;
+  z-index: 999;
+}
+
+.news-ticker-h {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding-left: 90%;
+  z-index: 999;
+
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: tic-h;
+  animation-duration: 30s;
+}
+.news-ticker-h:hover {
+  animation-play-state: paused;
+  background-color: rgb(255, 54, 54);
+}
+
+.ticker-wrapper-h:hover {
+  background-color: rgb(255, 54, 54);
+}
+
+.news-ticker-h li {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  white-space: nowrap;
+  padding-left: 10px;
+}
+
+.news-ticker-h li a {
+  color: #ececec;
+  font-weight: bold;
+  font-size: 2vh;
+}
+
+@keyframes tic-h {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+/* MAIN - BOX CONTENENTE TUTTO TRANNE NAV E TICKER */
+
+.main {
+  overflow-y: auto;
+  display: flex;
+  height: 100vh;
+  padding: 0px 10px 10px 10px;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 10px;
+  /* flex-shrink: 0; */
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+
+/* SCHEDA INFO PROGETTO */
+
+.scheda {
+  display: flex;
+  min-width: 350px;
+  padding: 15px 10px 20px 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  flex: 1 0 0;
+}
+
+.titlebox {
+  align-self: stretch;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  display: inline-flex;
+}
+
+.pjtitle {
+  flex: 1 1 0;
+  height: 33px;
+  color: black;
+  font-size: 24px;
+  font-family: SF Pro Display;
+  font-weight: 500;
+  word-wrap: break-word;
+}
+
+.pjanno {
+  flex: 1 1 0;
+  text-align: right;
+  color: black;
+  font-size: 24px;
+  font-family: SF Pro Display;
+  font-weight: 500;
+  word-wrap: break-word;
+}
+
+.subtitle {
+  align-self: stretch;
+  height: 24px;
+  color: black;
+  font-size: 18px;
+  font-family: SF Pro Display;
+  font-weight: 500;
+  word-wrap: break-word;
+}
+
+.description {
+  align-self: stretch;
+  color: black;
+  font-size: 15px;
+  font-family: SF Pro Display;
+  font-weight: 400;
+  line-height: 22.68px;
+  word-wrap: break-word;
+  padding-bottom: 10px;
+}
+
+.group {
+  align-self: stretch;
+  height: 18px;
+  color: #0000ff;
+  font-size: 15px;
+  font-family: SF Pro Display;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.designfields {
+  align-self: stretch;
+  height: 18px;
+  color: #0000ff;
+  font-size: 15px;
+  font-family: SF Pro Display;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.link {
+  align-self: stretch;
+  height: 18px;
+  color: #0000ff;
+  font-size: 15px;
+  font-family: SF Pro Display;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+/* CAROSELLO */
+
+.media {
+  position: relative;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 88vh;
+  /* background-color: #0000ff; */
+
+  max-width: 60vw;
+  border-radius: 8px;
+}
+
+.content {
+  margin-bottom: 10px;
+  /* background-color: #d4ff00; */
+
+  /* background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; */
+
+  height: auto;
+  /* border-radius: 8px; */
+}
+
+.imgcontent {
+  display: flex;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 1000px) {
+  .media {
+    position: relative;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100vh;
+    /* background-color: #0000ff; */
+
+    max-width: none;
+    border-radius: 8px;
+    margin-bottom: 15vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .logohome {
+    padding-left: 20px;
+    display: flex;
+    width: 102px;
+    height: 30px;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  #buttonabout {
+    display: none;
+  }
+  #buttonworks {
+    display: none;
+  }
+  .menu {
+    padding-right: 0px;
+  }
+
+  .scheda {
+    display: flex;
+    min-width: 0px;
+    padding: 0px 10px 20px 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    flex: 1 0 0;
+  }
+}
