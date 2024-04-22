@@ -336,12 +336,28 @@ a {
 }
 
 @media screen and (max-width: 600px) {
+  .nav {
+    display: flex;
+    position: sticky;
+    padding: 15px 0px 0px 0px;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: center;
+    width: 100%;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
   .logohome {
     padding-left: 20px;
     display: flex;
-    width: 102px;
+    width: 80px;
     height: 30px;
     align-items: flex-start;
+    padding-top: 3px;
     justify-content: flex-start;
   }
 
