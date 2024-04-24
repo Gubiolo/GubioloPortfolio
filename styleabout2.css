@@ -291,7 +291,7 @@ a {
 }
 
 .text {
-  z-index: -2;
+  z-index: 0;
   padding-right: 18px;
   padding-bottom: 20px;
   color: rgb(255, 255, 255);
@@ -307,18 +307,102 @@ p {
 }
 
 .playlist {
-  background-image: url(MATERIALI/GreedyMusicCover_Tavola\ disegno\ 1-min.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 250px;
-  width: 250px;
+  z-index: 10;
+  height: 15vw;
+  width: 15vw;
   border-radius: 5px;
 }
 
+#titolocentrato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.disco {
+  height: 15vw;
+  width: 15vw;
+  background-image: url(MATERIALI/CD.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 300px;
+  justify-self: center;
+  position: absolute;
+  z-index: -10;
+  transform: translateX(0vw);
+}
+
+.discomove {
+  height: 15vw;
+  width: 15vw;
+  background-image: url(MATERIALI/CD.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 300px;
+  justify-self: center;
+  position: absolute;
+  z-index: -10;
+  transform: translateX(0vw);
+  animation: cd;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-timing-function: cubic-bezier(1, 0, 0, 1);
+  animation-iteration-count: unset;
+  animation-fill-mode: forwards;
+}
+
+.discomoveout {
+  height: 15vw;
+  width: 15vw;
+  background-image: url(MATERIALI/CD.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 300px;
+  justify-self: center;
+  position: absolute;
+  z-index: -10;
+  transform: translateX(0vw);
+  animation: cdout;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-timing-function: cubic-bezier(1, 0, 0, 1);
+  animation-iteration-count: unset;
+  animation-fill-mode: forwards;
+}
+
+@keyframes cd {
+  0% {
+    transform: translateX(0vw);
+  }
+  100% {
+    transform: translateX(3vw);
+  }
+}
+
+@keyframes cdout {
+  0% {
+    transform: translateX(3vw);
+  }
+  100% {
+    transform: translateX(0vw);
+  }
+}
+
+/* IPAD */
+
 @media screen and (max-width: 1025px) {
   .main {
-    height: 100vh;
+    height: auto;
+  }
+
+  body {
+    overflow-y: auto;
   }
 
   .boximg {
@@ -334,9 +418,9 @@ p {
 
   .info {
     position: relative;
-    overflow-y: scroll;
+    overflow-y: hidden;
     overflow-x: hidden;
-    height: 55vh;
+    height: auto;
     /* background-color: #77ff00; */
     width: auto;
     max-width: none;
@@ -344,7 +428,17 @@ p {
   }
 }
 
+/* MOBILE */
+
 @media screen and (max-width: 600px) {
+  body {
+    overflow-y: auto;
+  }
+
+  .main {
+    height: auto;
+  }
+
   .nav {
     display: flex;
     position: sticky;
@@ -380,7 +474,7 @@ p {
   .boximg {
     display: flex;
     min-width: 200px;
-    height: 40vh;
+    height: 35vh;
     padding: 0px 10px 20px 10px;
     flex-direction: column;
     align-items: flex-start;
@@ -390,9 +484,9 @@ p {
 
   .info {
     position: relative;
-    overflow-y: scroll;
+    overflow-y: hidden;
     overflow-x: hidden;
-    height: 50vh;
+    height: auto;
     /* background-color: #77ff00; */
     width: auto;
     max-width: none;
@@ -417,5 +511,41 @@ p {
     align-items: center;
 
     padding: 10px 10px 10px 10px;
+  }
+
+  .playlist {
+    height: 200px;
+    width: 200px;
+  }
+
+  .disco {
+    height: 200px;
+    width: 200px;
+  }
+  .discomove {
+    height: 200px;
+    width: 200px;
+  }
+  .discomoveout {
+    height: 200px;
+    width: 200px;
+  }
+
+  @keyframes cd {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(60px);
+    }
+  }
+
+  @keyframes cdout {
+    0% {
+      transform: translateX(60px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
   }
 }

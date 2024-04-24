@@ -117,24 +117,36 @@
             <div class="infotitlelist">Dormy in Pie</div>
             <div
               class="playlist"
+              onmouseover="animazionein1()"
+              onmouseleave="animazioneout1()"
               style="background-image: url(MATERIALI/Dormy.jpg)"
-            ></div>
+            >
+              <div class="disco" id="disc1"></div>
+            </div>
           </div>
-          <div class="text">
+          <div class="text" id="titolocentrato">
             <div class="infotitlelist">POV: guardi techetechetè</div>
+
             <div
               class="playlist"
+              onmouseover="animazionein2()"
+              onmouseleave="animazioneout2()"
               style="background-image: url(MATERIALI/POV.jpg)"
             ></div>
+            <div class="disco" id="disc2" style="margin-top: 29px"></div>
           </div>
           <div class="text">
             <div class="infotitlelist">Greedy Music</div>
             <div
               class="playlist"
+              onmouseover="animazionein3()"
+              onmouseleave="animazioneout3()"
               style="
                 background-image: url(MATERIALI/GreedyMusicCover_Tavola\ disegno\ 1-min.jpg);
               "
-            ></div>
+            >
+              <div class="disco" id="disc3"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -195,5 +207,29 @@
   function imgstock() {
     document.getElementById("boxtochange").style.backgroundImage =
       "url(MATERIALI/gubioloshot.jpg)";
+  }
+
+  function animazionein1() {
+    document.getElementById("disc1").className = "discomove";
+  }
+
+  function animazioneout1() {
+    document.getElementById("disc1").className = "discomoveout";
+  }
+
+  function animazionein2() {
+    document.getElementById("disc2").className = "discomove";
+  }
+
+  function animazioneout2() {
+    document.getElementById("disc2").className = "discomoveout";
+  }
+
+  function animazionein3() {
+    document.getElementById("disc3").className = "discomove";
+  }
+
+  function animazioneout3() {
+    document.getElementById("disc3").className = "discomoveout";
   }
 </script>
