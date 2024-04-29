@@ -148,7 +148,6 @@ a {
   align-self: stretch;
   color: #fff;
   font-family: "SF Pro Display";
-
   font-style: normal;
   text-decoration-line: underline;
 }
@@ -528,8 +527,11 @@ a {
   .logohome {
     padding-left: 20px;
     display: flex;
-    width: 102px;
-    height: 30px;
+    /* width: 102px;
+    height: 30px; */
+    padding-top: 0.7vw;
+    width: 20.5vw;
+    height: auto;
     align-items: flex-start;
     justify-content: flex-start;
   }
