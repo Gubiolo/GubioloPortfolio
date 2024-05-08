@@ -1,3 +1,8 @@
+/* @font-face {
+  font-family: SF Pro Display;
+  src: url("MATERIALI/SF-Pro-Display-Regular.otf");
+} */
+
 body {
   background: #0000ff;
   display: flex;
@@ -124,7 +129,7 @@ a {
   font-family: "SF Pro Display";
   font-size: 10px;
   font-style: normal;
-  letter-spacing: -0.56px;
+
   font-weight: 200;
 }
 
@@ -256,7 +261,8 @@ a {
   opacity: 75%;
   font-size: 18px;
   font-family: SF Pro Display;
-  font-weight: 500;
+  font-weight: 400;
+
   word-wrap: break-word;
   padding: 10px 10px 0px 10px;
 }

@@ -522,7 +522,7 @@ a {
     display: flex;
     position: fixed;
     padding: 15px 0px 0px 0px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     justify-content: space-between;
     align-items: flex-start;
     align-self: center;
@@ -534,12 +534,12 @@ a {
   }
 
   .logohome {
-    /* padding-left: 20px; */
+    padding-left: 20px;
     display: inline-block;
-    /* width: 102px;
-    height: 30px; */
-    /* padding-top: 0.7vw; */
-    width: 20.5vw;
+    width: 80px;
+    /* height: 30px;  */
+    padding-top: 0.7vw;
+    /* width: 20.5vw; */
 
     /* height: auto; */
     align-self: flex-start;
