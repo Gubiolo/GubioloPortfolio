@@ -3,6 +3,16 @@
   src: url("MATERIALI/SF-Pro-Display-Regular.otf");
 }
 
+@font-face {
+  font-family: SF Pro Display L;
+  src: url("MATERIALI/SF-Pro-Display-Light.otf");
+}
+
+@font-face {
+  font-family: SF Pro Display S;
+  src: url("MATERIALI/SF-Pro-Display-Semibold.otf");
+}
+
 body {
   background: #eaeae7;
   display: flex;
@@ -126,10 +136,10 @@ a {
 
 .crediti {
   color: #000000;
-  font-family: "SF Pro Display";
+  font-family: "SF Pro Display L";
   font-size: 10px;
   font-style: normal;
-
+  letter-spacing: 0.05rem;
   font-weight: 400;
 }
 
@@ -230,8 +240,8 @@ a {
   height: 33px;
   color: black;
   font-size: 24px;
-  font-family: SF Pro Display;
-  font-weight: 500;
+  font-family: "SF Pro Display S";
+  font-weight: 400;
   word-wrap: break-word;
 }
 
@@ -240,8 +250,8 @@ a {
   text-align: right;
   color: black;
   font-size: 24px;
-  font-family: SF Pro Display;
-  font-weight: 500;
+  font-family: "SF Pro Display S";
+  font-weight: 400;
   word-wrap: break-word;
 }
 
@@ -250,8 +260,8 @@ a {
   height: 24px;
   color: black;
   font-size: 18px;
-  font-family: SF Pro Display;
-  font-weight: 500;
+  font-family: "SF Pro Display S";
+  font-weight: 400;
   word-wrap: break-word;
 }
 
@@ -259,7 +269,7 @@ a {
   align-self: stretch;
   color: black;
   font-size: 15px;
-  font-family: SF Pro Display;
+  font-family: "SF Pro Display";
   font-weight: 400;
   line-height: 22.68px;
   word-wrap: break-word;
@@ -271,7 +281,7 @@ a {
   height: 18px;
   color: #0000ff;
   font-size: 15px;
-  font-family: SF Pro Display;
+  font-family: "SF Pro Display";
   font-weight: 400;
   word-wrap: break-word;
 }
@@ -281,7 +291,7 @@ a {
   height: 18px;
   color: #0000ff;
   font-size: 15px;
-  font-family: SF Pro Display;
+  font-family: "SF Pro Display";
   font-weight: 400;
   word-wrap: break-word;
 }
@@ -291,7 +301,7 @@ a {
   height: 18px;
   color: #0000ff;
   font-size: 15px;
-  font-family: SF Pro Display;
+  font-family: "SF Pro Display";
   font-weight: 400;
   word-wrap: break-word;
 }
@@ -358,12 +368,18 @@ a {
 
   .logohome {
     padding-left: 20px;
-    display: flex;
+    display: inline-block;
     width: 80px;
-    height: 30px;
+    /* height: 30px; */
     align-items: flex-start;
     padding-top: 3px;
     justify-content: flex-start;
+  }
+
+  .logohome img {
+    width: 100%;
+    position: relative;
+    object-fit: contain;
   }
 
   #buttonabout {

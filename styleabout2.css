@@ -1,7 +1,17 @@
-/* @font-face {
+@font-face {
   font-family: SF Pro Display;
   src: url("MATERIALI/SF-Pro-Display-Regular.otf");
-} */
+}
+
+@font-face {
+  font-family: SF Pro Display L;
+  src: url("MATERIALI/SF-Pro-Display-Light.otf");
+}
+
+@font-face {
+  font-family: SF Pro Display S;
+  src: url("MATERIALI/SF-Pro-Display-Semibold.otf");
+}
 
 body {
   background: #0000ff;
@@ -129,8 +139,8 @@ a {
   font-family: "SF Pro Display";
   font-size: 10px;
   font-style: normal;
-
-  font-weight: 200;
+  letter-spacing: 0.05rem;
+  font-weight: 400;
 }
 
 .ticker-wrapper-h {
@@ -260,9 +270,9 @@ a {
   color: rgb(255, 255, 255);
   opacity: 75%;
   font-size: 18px;
-  font-family: SF Pro Display;
+  font-family: "SF Pro Display S";
   font-weight: 400;
-
+  letter-spacing: 0.05rem;
   word-wrap: break-word;
   padding: 10px 10px 0px 10px;
 }
@@ -271,7 +281,7 @@ a {
   color: rgb(255, 255, 255);
   opacity: 75%;
   font-size: 18px;
-  font-family: SF Pro Display;
+  font-family: "SF Pro Display";
   font-weight: 500;
   word-wrap: break-word;
   padding-bottom: 5px;
@@ -281,7 +291,7 @@ a {
   flex: 1 1 0;
   color: rgb(255, 255, 255);
   font-size: 28px;
-  font-family: SF Pro Display;
+  font-family: "SF Pro Display S";
   font-weight: 500;
   word-wrap: break-word;
   padding: 10px 10px 10px 10px;
@@ -302,7 +312,7 @@ a {
   padding-bottom: 20px;
   color: rgb(255, 255, 255);
   font-size: 18px;
-  font-family: SF Pro Display;
+  font-family: "SF Pro Display L";
   font-weight: 300;
   /* word-wrap: break-word; */
 }
@@ -467,12 +477,18 @@ p {
 
   .logohome {
     padding-left: 20px;
-    display: flex;
+    display: inline-block;
     width: 80px;
-    height: 30px;
+    /* height: 30px; */
     align-items: flex-start;
     padding-top: 3px;
     justify-content: flex-start;
+  }
+
+  .logohome img {
+    width: 100%;
+    position: relative;
+    object-fit: contain;
   }
 
   #buttonIG {
